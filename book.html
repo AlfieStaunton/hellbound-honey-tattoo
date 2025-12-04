@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title> Booking - Hellbound Honey Tattoo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <!-- navbar-->
+         <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"> Hellbound Honey Tattoo</a>
+                <button class="navbar-toggler"  type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="book.html">Book</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-book">
+            <div class="hero-content">
+                <h1>Book Your Tattoo</h1>
+                <P>Ready for your next piece? Fill out the booking form below!! Need some inspiration? Check out out <a href="https://www.instagram.com" target="_blank">Instagram page!</a>
+                </P>
+            </div>
+        </section>
+
+        <!-- booking form-->
+         <section class="booking-section">
+            <h2>Booking Form</h2>
+
+            <form id="bookingForm">
+                <label>Name*</label>
+                <input type="text" id="name" required>
+
+                <label>Phone Number*</label>
+                <input type="tel" id="phone" required>
+
+                <label>Email*</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email" required>
+                <small id="emailError" class="text-dander d-none">
+                    Please enter a valid email.
+                </small>
+                </small>
+                <label>Are you 18 or older?*</label> 
+                <select id="age" required>
+                    <option value="">Select one</option>
+                    <option value="yes">Yes, I am 18 or older</option>
+                    <option value="no">No, I am under 18</option>
+                </select>
+
+                <label>Which artist would you like to book with?*</label>
+                <select id="artist" required>
+                    <option value="">Choose Artist</option>
+                     <option value="Owner">Alfie</option>
+                      <option value="Artist1">Savanah</option>
+                      <option value="Artist2">Oscar</option>
+                      <option value="Artist3">Joey</option>
+                </select>
+
+                <label>Description of Tattoo*<br> (Include placement & size)</label>
+                <textarea id="descripton" required></textarea>
+
+                <label> Upload at least 3 images* <br> (Include inspiration photos & photo of area where you would like the tattoo) </label>
+                <div class="form-group">
+                    <label for="image1">Upload Image 1</label>
+                    <input type="file" id="image1" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="image2">Upload Image 2</label>
+                    <input type="file" id="image2" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="image3">Upload Image 3</label>
+                    <input type="file" id="image3" accept="image/*" required>
+                </div>
+                
+
+                <button type="submit">Submit Booking Request</button>
+            </form>
+         </section>
+
+         <!-- footer -->
+        <footer>
+            <div class="footer-content container">
+            <div class="footer-info">
+                <h3>Contact Us</h3>
+                <p>666 Misery Hill, Dublin, Ireland</p>
+                <p>Email: <a href="mailto:info@hellboundhoney.com">info@hellboundhoney.com</a></p>
+                <p>Phone: <a href="tel:+353666666666">+353 666 666 666</a></p>
+            </div>
+        
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+            <p class="footer-copy"> &copy; 2025 Hellbound Honey. All rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+        </body>
+        </html>
