@@ -454,8 +454,6 @@ footer {
  }
 
 
-
-
  /* ----------------------------------------------------------- */
 
 /* booking page */
@@ -476,13 +474,6 @@ text-transform: uppercase;
 margin-bottom: 1rem;
 }
 
-/* ---- I dont think i need this
-.hero-book::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-}  ----*/
 
 .hero-content {
     position: relative;
@@ -497,7 +488,7 @@ margin-bottom: 1rem;
     background: #1a1a1a;
     padding: 2rem;
     border-radius: 12px;
-    border: 3px solid #FFD93D;
+    border: 3px solid #dc143c;
  }
 
  label {
@@ -510,7 +501,7 @@ margin-bottom: 1rem;
     width: 100%;
     padding: 0.8rem;
     border-radius: 6px;
-    border: 2px solid #FFD93D;
+    border: 2px solid #dc143c;
     background: #0f0f0f;
     color: #fff;
  }
@@ -565,40 +556,134 @@ margin-bottom: 1rem;
    content: "";
    display:none;
  }
-.faq-section {
-   padding-left: 1rem;
-   padding-right: 1rem;
-}
- .accordion-button {
-   background-color: #111;
-   color: #fff;
-   border: none;
+
+ .faq-sec {
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 2rem 1rem;
+   color: #ccc;
  }
 
- .accordion-button:not(.collapsed) {
-   background-color: #dc143c;
-   color: #fff;
- }
- 
- .accordion-body {
-   background-color: #181818;
-   color: #ddd;
- }
-
- .accordion-item {
-   border: 1px solid #333;
+ .email-box {
+   text-align: center;
+   margin-bottom: 2rem;
  }
 
  .email-box p {
    font-size: 1.2rem;
+   margin-top: 0.5rem;
  }
 
- .btn-danger {
+ .email-box .btn {
+   display: inline-block;
    background-color: #dc143c;
-   border: none;
+   color: #fff;
+   text-decoration: none;
+   padding: 0.5rem 1.2rem;
+   border-radius: 5px;
+   transition: background 0.3s;
  }
 
- .btn-danger:hover {
+ .email-box .btn:hover {
    background-color: #ff2a5c;
  }
 
+ .faq-items details {
+   background-color: #111;
+   border: 1px solid #333;
+   border-radius: 5px;
+   margin-bottom: 1rem;
+   padding: 0.5rem;
+ }
+
+ .faq-items summary {
+   cursor: pointer;
+   font-weight: bold;
+   padding: 0.5rem 0;
+   position: relative;
+   list-style:none;
+   color: #dc143c;
+ }
+
+ .faq-items summary::marker {
+   content: '';
+ }
+
+ .faq-items summary::after {
+   content: '▸';
+   position: absolute;
+   right: 0;
+   transition:transform 0.3s;
+ }
+
+ .faq-items details[open] summary::after {
+   transform: rotate(90deg);
+ }
+
+ .faq-items p {
+   margin-top: 0.5rem;
+   line-height: 1.5;
+ }
+
+ /* aftercare */
+ .aftercare-hero {
+   height:40vh;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   background-color: #111;
+}
+
+.aftercare-text {
+   position: relative;
+   color: #dc143c;
+   text-align: center;
+   z-index: 2;
+}
+
+.aftercare-text h1 {
+   font-size: 3rem;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.aftercare-text p{
+   text-align: center;
+   color: #ccc;
+   font-size: 1.3rem;
+
+}
+
+.aftercare-content {
+   color: #ccc;
+   padding: 3rem 1rem;
+   font-size: 1.1rem;
+}
+
+.aftercare-content h3 {
+   color: #dc143c;
+   margin-bottom: 2.5rem;
+   margin-top: 2rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.aftercare-content h3 {
+   margin-top: 2rem;
+   color: #dc143c;
+}
+
+.aftercare-list {
+   list-style:none;
+   padding-left: 0;
+}
+.aftercare-content li{
+   line-height: 1.9;
+   margin-bottom: 2rem;
+}
+
+.container {
+   max-width: 900px;
+   margin: auto;
+}
